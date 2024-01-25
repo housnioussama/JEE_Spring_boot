@@ -38,7 +38,7 @@ public class CentreVaccinationServiceImp implements CentreVaccinationService {
             CentreVaccination centre1=centre.get();
             centre1.setNom(nom);
             centre1.setAdress(adresse);
-            ajouterCentreVaccination(centre1);
+           centreVaccinationRepository.save(centre1);
 
         }
         return null;

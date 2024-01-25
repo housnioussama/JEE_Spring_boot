@@ -10,4 +10,5 @@ public interface CentreVaccinationRepository extends JpaRepository<CentreVaccina
     @Override
     Optional<CentreVaccination> findById(Long Long);
     Optional<CentreVaccination> findCentreVaccinationByNom(String nom);
+    Optional<CentreVaccination> findCentreVaccinationByNomAndAdress(String nom, String adresse);
 }
